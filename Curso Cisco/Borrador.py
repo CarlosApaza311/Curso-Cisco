@@ -1,5 +1,10 @@
-t = [[3-i for i in range (3)] for j in range (3)]
-s = 0
-for i in range(3):
-    s += t[i][i]
-print(s)
+colors = {
+    "white": (255, 255, 255),
+    "grey": (128, 128, 128),
+    "red": (255, 0, 0),
+    "green": (0, 128, 0)
+    }
+ 
+for col, rgb in colors.items():
+    print(col, ":", rgb)
+print(colors.items())
